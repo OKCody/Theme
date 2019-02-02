@@ -1,1 +1,3 @@
-include: ['sw.js']
+include:
+  - _pages
+  - sw.js
