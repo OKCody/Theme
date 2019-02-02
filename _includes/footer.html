@@ -1,0 +1,34 @@
+<footer>
+  <p>Footer goes here.</p>
+  <script>
+  /*
+  window.addEventListener("scroll", function(){
+    if(document.body.scrollTop < 50){
+      var margin = (50 - document.body.scrollTop).toString();
+      document.getElementById('prev').style.top = margin + 'px';
+      document.getElementById('next').style.top = margin + 'px';
+      document.getElementById('nav').style.maxHeight = 50;
+      document.getElementById('nav').style.boxShadow = 'none';
+    }
+    else{
+      document.getElementById('nav').style.maxHeight = 25;
+      document.getElementById('nav').style.boxShadow = "10px 0px 5px grey";
+      document.getElementById('prev').style.top = "0px";
+      document.getElementById('next').style.top = "0px";
+    }
+  });
+  */
+  window.addEventListener("resize", function(){
+    document.getElementsByTagName('main')[0].style.marginTop = document.getElementById('nav').clientHeight.toString() + 'px';
+  });
+
+  window.addEventListener('keyup', function(e){
+    if(e.keyCode == 37){
+      document.getElementById('prev').click();
+    }
+    if(e.keyCode == 39){
+      document.getElementById('next').click();
+    }
+  });
+  </script>
+</footer>

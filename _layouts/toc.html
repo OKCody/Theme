@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+	{% include header.html %}
+	<main>
+                <div id='toc'>
+			<h1>{{ site.title }}</h1>
+			<h2>{{ site.subtitle }}<h2>
+		        <h3>{{ site.author }}</h3>
+		        <h4>{{ site.license }}</h4>
+			{{ content }}
+		</div>
+		{% include footer.html %}
+	</main>
+</body>
+
+</html>

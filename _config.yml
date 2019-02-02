@@ -1,0 +1,28 @@
+# Site Settings
+title: Start Jekyll
+subtitle: testing
+author: Cody Taylor
+license: CC BY
+email: codyalantaylor@gmail.com
+description: >
+  A guide to getting started with Jekyll.
+baseurl: "/Jekyll_Test"
+twitter_username: OKCody_
+github_username:  OKCody
+plugins:
+  - jekyll-optional-front-matter
+# Build Settings
+include: ['_pages']
+kramdown:
+  input: GFM
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "toc"
+  -
+    scope:
+      path: "_pages"
+    values:
+      layout: "pages"

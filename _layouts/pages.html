@@ -1,0 +1,45 @@
+{% comment %}
+	Enable 'previous'/'next' page functionality without
+	disturbing site structure where each distinct book is
+	contained in its own directory. Other approaches involve
+	plugins, 'posts', and 'collections'. This approach is
+	only concerned with the number of pages in a directory. It's
+	slow but is an uncomplicated solution.
+{% endcomment %}
+{% assign path = page.dir %}
+{% assign limit = 0 %}
+{% for page in site.pages %}
+  {% if page.dir == path %}
+	  {% assign limit = limit | plus: 1 %}
+	{% endif %}
+{% endfor %}
+
+{% comment %}
+	Adjust for meta pages: toc.md, etc.
+{% endcomment %}
+{% assign limit = limit | minus: 1 %}
+
+{% assign prev = page.name | remove: ".md" | minus: 1 %}
+{% assign next = page.name | remove: ".md" | plus: 1 %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+
+<body>
+	{% include header.html %}
+	<main>
+		{% if prev > 0 %}
+		  <a id='prev' class="adv" href="{{ prev }}.html">◀</a>
+		{% endif %}
+		<article>
+			{{ content }}
+		</article>
+		{% if next < limit %}
+		  <a id='next' class="adv" href="{{ next }}.html">▶</a>
+		{% endif %}
+	</main>
+	{% include footer.html %}
+</body>
+
+</html>
