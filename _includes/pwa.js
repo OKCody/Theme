@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 var cacheName = 'hello-world-page';
 var filesToCache = [
   '/',
