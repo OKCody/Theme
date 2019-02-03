@@ -52,7 +52,7 @@ img + em{
   width: calc((100% - 33em)/4);
   height: 100%;
   margin: 0px;
-  color: #EEE;
+  color: #595959;
   text-decoration: none;
   padding-top: calc(50vh - 50px);
   text-align: center;
