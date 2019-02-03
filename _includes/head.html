@@ -1,13 +1,16 @@
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="theme-color" content="#FFFFFF"/>
+	<meta name="theme-color" content="{{ theme_color }}"/>
+	<meta name="author" content="{{ author }}">
+	<meta name="description" content="{{ description }}">
+	<meta name="keywords" content="{{ keywords }}">
 
 
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 	<link rel="manifest" href="/assets/manifest.json">
+	<link rel="canonical" href="{{ canonical_url }}"/>
 	<!--<link rel="stylesheet" href="{{ "/css/lit.css" }}">-->
 	<link rel="stylesheet" href="{{ "/assets/css/custom.css" }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
