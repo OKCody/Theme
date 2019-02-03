@@ -9,6 +9,6 @@
   "icons": [{
     "src": "/assets/icons/resistor.svg",
     "sizes": "256x256",
-    "type": "image/png"
+    "type": "image/svg"
   }]
 }
