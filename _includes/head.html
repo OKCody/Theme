@@ -10,7 +10,7 @@
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
 	<link rel="manifest" href="/assets/manifest.json">
-	<link rel="canonical" href="{{ canonical_url }}"/>
+	<link rel="canonical" href="{{ site.canonical_url }}"/>
 	<!--<link rel="stylesheet" href="{{ "/css/lit.css" }}">-->
 	<link rel="stylesheet" href="{{ "/assets/css/custom.css" }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
