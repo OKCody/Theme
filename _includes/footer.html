@@ -33,7 +33,7 @@
   </script>
   <script>
       if('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/content/sw.js')
+        navigator.serviceWorker.register('/{{site.id}}/sw.js')
           .then(function() {
                 console.log('Service Worker Registered');
           });
