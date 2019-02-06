@@ -1,7 +1,7 @@
 ---
 layout: null
 ---
-var documents = [
+window.index = [
 {% for page in site.html_pages %}
 {
   "name": "{{page.name}}",
