@@ -3,8 +3,8 @@ layout: null
 ---
 
 var idx = lunr(function () {
-  this.field('title')
-  this.field('body')
+  this.field('name')
+  this.field('text')
 
   this.add([
     {% for page in site.html_pages %}
