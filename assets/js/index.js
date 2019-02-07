@@ -14,4 +14,4 @@ var idx = lunr(function () {
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ])
-}
+});
