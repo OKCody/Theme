@@ -33,12 +33,12 @@
   </script>
   <script>
     if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/{{site.id}}/sw.js')
+      navigator.serviceWorker.register('{{ site.baseurl }}/sw.js')
         .then(function() {
               console.log('Service Worker Registered');
         });
     }
   </script>
-  <script type="text/javascript" src="{{ site.baseurl }}/assets/js/index.js"></script>
+  <script type="text/javascript" src="{{ site.baseurl }}/{{ site.id }}/assets/js/index.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/lunr/lunr.js"></script>
 </footer>

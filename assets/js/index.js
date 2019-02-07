@@ -1,7 +1,8 @@
 ---
 layout: null
 ---
-window.index = [
+
+var index = [
 {% for page in site.html_pages %}
 {
   "name": "{{page.name}}",
@@ -9,3 +10,11 @@ window.index = [
 }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 ]
+
+var idx = lunr(function () {
+  this.ref('id')
+  this.field('body')
+  this.metadataWhitelist = ['position']
+
+  index.forEach(function (doc) { this.add(doc) }, this)
+})
