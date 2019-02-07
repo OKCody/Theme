@@ -41,4 +41,13 @@
   </script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/lunr/lunr.js"></script>
   <script type="text/javascript" src="{{ site.baseurl }}/assets/js/index.js"></script>
+  <script>
+    var idx = lunr(function () {
+      this.ref('name')
+      this.field('text')
+      this.metadataWhitelist = ['position']
+
+      window.index.forEach(function (doc) { this.add(doc) }, this)
+    })
+  </script>
 </footer>
