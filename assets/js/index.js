@@ -34,7 +34,7 @@ window.index = [
 
     {
       "name": "{{ page.name }}",
-      "title": "{{ headings }}",
+      "title": "{{ headings[0] }}",
       "text": "{{ content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}"
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
