@@ -35,6 +35,7 @@ layout: null
 
 window.index = [
     {% for page in site.html_pages %}
+    {% assign content = page.content | markdownify %}
     {
       "name": "{{ page.name }}",
       "url": "{{ site.baseurl }}/{{ page.name }}",
