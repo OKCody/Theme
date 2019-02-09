@@ -32,7 +32,7 @@ layout: null
 {% assign headings = h1_array | push: h2_array | push: h3_array | push: h4_array | push: h5_array | push: h6_array %}
 {% endfor %}
 
-
+{% capture search_index %}
 window.index = [
     {% for page in site.html_pages %}
     {% assign content = page.content | markdownify %}
@@ -44,3 +44,6 @@ window.index = [
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ];
+{% endcapture %}
+
+{{ search_index | strip_newlines }}
