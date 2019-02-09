@@ -31,9 +31,10 @@ function build_idx(){
     this.add(doc)
     }, this)
   })
+  return idx;
 }
 
-build_idx();
+var idx = build_idx();
 
 //var query = 'biology';
 
