@@ -33,25 +33,28 @@ function build_idx(){
   })
 }
 
-// Pad result sentence with surrounding sentences for context unitl
-// the result is 100 characters long
-function clean(string){
-  return string.replace(/ +(?= )/g,'').trim();
-}
+build_idx();
 
-var query = 'biology';
-var results = idx.search(query);
+//var query = 'biology';
 
-for(var i=0; i<results.length; i++){
-  exit = false;
-  for(var j=0; j<index.length && exit == false; j++){
-    if(index[j].name == results[i].ref){
-      try{
-        console.log(uniform_context(sub_search(query, index[j].text)));
-        exit = true;
-      }
-      catch(e){
-        //moving on . . .
+
+function build_results(query){
+  var results = idx.search(query);
+  function clean(string){
+    return string.replace(/ +(?= )/g,'').trim();
+  }
+
+  for(var i=0; i<results.length; i++){
+    exit = false;
+    for(var j=0; j<window.index.length && exit == false; j++){
+      if(window.index[j].name == results[i].ref){
+        try{
+          console.log(clean(sub_search(query, window.index[j].text)));
+          exit = true;
+        }
+        catch(e){
+          //moving on . . .
+        }
       }
     }
   }
