@@ -1,6 +1,9 @@
 ---
 layout: null
 ---
+
+
+
 {% capture search_index %}
 window.index = [
     {% for page in site.html_pages %}
