@@ -2,8 +2,6 @@
 layout: null
 ---
 
-
-
 {% capture search_index %}
 window.index = [
     {% for page in site.html_pages %}
@@ -37,7 +35,7 @@ window.index = [
     {
       "name": "{{ page.name }}",
       "url": "{{ site.baseurl }}/{{ page.name }}",
-      "title": "{{ headings[0] }}",
+      "title": "{{ headings[0] | default: page.name }}",
       "text": "{{ content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip }}"
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
