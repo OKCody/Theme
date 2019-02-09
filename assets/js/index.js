@@ -4,7 +4,7 @@ layout: null
 
 window.index = [
     {% for page in site.html_pages %}
-    {% assign h2_content = page.content |  markdownify | newline_to_br | split: '<br>' %}
+    {% assign h2_content = page.content |  markdownify | newline_to_br | split: '<br />' %}
     {
       "name": "{{page.name}}",
       "title": "{{ h2_content[0] }}",
