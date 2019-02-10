@@ -36,9 +36,6 @@ function build_idx(){
 
 var idx = build_idx();
 
-//var query = 'biology';
-
-
 function query(query){
   var results = idx.search(query);
   function clean(string){
@@ -52,14 +49,14 @@ function query(query){
         try{
           var result = document.createElement('a');
           result.href = window.index[j].url;
-          var title = document.createElement('h3');
+          var title = document.createElement('h4');
           title.innerText = window.index[j].title;
           var peek = document.createElement('pre');
           peek.innerText = clean(sub_search(query, window.index[j].text));
           result.appendChild(title);
-          result.appendChile(peek);
+          result.appendChild(peek);
           document.getElementById('results').appendChild(result);
-          //console.log();
+          console.log(result);
           exit = true;
         }
         catch(e){
