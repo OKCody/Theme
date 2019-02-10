@@ -36,7 +36,7 @@ window.index = [
       "name": "{{ page.name }}",
       "url": "{{ site.baseurl }}/{{ page.name }}",
       "title": "{{ headings[0] | default: page.name }}",
-      "text": "{{ content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | replace: 'Preface','' | replace: 'preface', '' | replace: 'Chapter', '' | replace: 'chapter', '' | replace: 'Summary', '' | replace: 'summary', ''}}"
+      "text": "{{ content | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip_html | strip | replace: 'Preface','' | replace: 'preface', '' | replace: 'Chapter', '' | replace: 'chapter', '' | replace: 'Summary', '' | replace: 'summary', '' | replace: 'Section', '' | replace: 'section', ''}}"
     }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ];
