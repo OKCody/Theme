@@ -49,9 +49,9 @@ function query(query){
         try{
           var result = document.createElement('a');
           result.href = window.index[j].url;
-          var title = document.createElement('h4');
+          var title = document.createElement('h3');
           title.innerText = window.index[j].title;
-          var peek = document.createElement('pre');
+          var peek = document.createElement('p');
           peek.innerText = clean(sub_search(query, window.index[j].text));
           result.appendChild(title);
           result.appendChild(peek);
