@@ -122,6 +122,19 @@ img + em{
 #nav #download{
   margin-right: 1.5em;
 }
+
+#results{
+  color: black;
+}
+
+#results a{
+  text-decoration-line: none;
+}
+#results h3{
+}
+#results p{
+}
+
 /* Small Screen Rules*/
 @media screen and (max-width: 800px) {
   main{
