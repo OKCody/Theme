@@ -129,10 +129,13 @@ img + em{
 
 #results a{
   text-decoration-line: none;
+  color:
 }
 #results h3{
+  margin-bottom: 0px;
 }
 #results p{
+  margin-top: 0px;
 }
 
 /* Small Screen Rules*/
