@@ -123,13 +123,9 @@ img + em{
   margin-right: 1.5em;
 }
 
-#results{
-  color: black;
-}
-
 #results a{
   text-decoration-line: none;
-  color:
+  color: black;
 }
 #results h3{
   margin-bottom: 0px;
