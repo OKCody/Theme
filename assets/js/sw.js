@@ -7,7 +7,7 @@ var filesToCache = [
   '/assets/css/custom.css',
   '/assets/css/hmbgr.svg',
   '/sw.js',
-  {% for page in site.pages %}'{{ page.url }}'{% unless forloop.last %},{% endunless %}
+  {% for page in site.html_pages %}'{{ page.url }}'{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ];
 self.addEventListener('install', function(e) {
