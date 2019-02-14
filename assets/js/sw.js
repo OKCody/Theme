@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /
+permalink: :basename
 ---
 var cacheName = 'hello-world-page';
 var filesToCache = [
