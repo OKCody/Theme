@@ -6,6 +6,7 @@ var cacheName = 'hello-world-page';
 var filesToCache = [
   '/assets/css/custom.css',
   '/assets/css/hmbgr.svg',
+  '/sw.js',
   {% for page in site.pages %}'{{ page.url }}'{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ];
