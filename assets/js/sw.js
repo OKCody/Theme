@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: :basename
+permalink: /sw.js
 ---
 var cacheName = 'hello-world-page';
 var filesToCache = [
