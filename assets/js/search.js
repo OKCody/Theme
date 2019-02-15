@@ -41,28 +41,37 @@ function query(query){
   function clean(string){
     return string.replace(/ +(?= )/g,'').trim();
   }
-
-  for(var i=0; i<results.length; i++){
-    exit = false;
-    for(var j=0; j<window.index.length && exit == false; j++){
-      if(window.index[j].name == results[i].ref){
-        try{
-          var result = document.createElement('a');
-          result.href = window.index[j].url;
-          var title = document.createElement('h3');
-          title.innerText = window.index[j].title;
-          var peek = document.createElement('p');
-          peek.innerText = clean(sub_search(query, window.index[j].text));
-          result.appendChild(title);
-          result.appendChild(peek);
-          document.getElementById('results').appendChild(result);
-          console.log(result);
-          exit = true;
-        }
-        catch(e){
-          //moving on . . .
+  function remove_results(callback){
+    var results = document.getElementById('results');
+    while(results.hasChildNodes()){
+      document.getElementById('results').firstChild.remove();
+    }
+    callback();
+  }
+  function display_results(){
+      for(var i=0; i<results.length; i++){
+        exit = false;
+        for(var j=0; j<window.index.length && exit == false; j++){
+          if(window.index[j].name == results[i].ref){
+            try{
+              var result = document.createElement('a');
+              result.href = window.index[j].url;
+              var title = document.createElement('h3');
+              title.innerText = window.index[j].title;
+              var peek = document.createElement('p');
+              peek.innerText = clean(sub_search(query, window.index[j].text));
+              result.appendChild(title);
+              result.appendChild(peek);
+              document.getElementById('results').appendChild(result);
+              console.log(result);
+              exit = true;
+            }
+            catch(e){
+              //moving on . . .
+            }
+          }
         }
       }
     }
-  }
+  remove_results(display_results);
 }
