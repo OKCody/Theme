@@ -74,4 +74,5 @@ function query(query){
       }
     }
   remove_results(display_results);
+  return false;
 }
