@@ -10,7 +10,7 @@ permalink: /search.html
 	{% include header.html %}
 	<main>
     <h2>Search</h2>
-    <form action="#" onsubmit="query(document.getElementById('query').value); return false">
+    <form onsubmit="window.query(document.getElementById('query').value); return false">
 			<input id='query' type="text" placeholder="Search"/>
 			<input type="submit"/>
 		</form>
