@@ -49,6 +49,7 @@ function query(query){
     callback();
   }
   function display_results(){
+    if(results.length > 0){
       for(var i=0; i<results.length; i++){
         exit = false;
         for(var j=0; j<window.index.length && exit == false; j++){
@@ -73,5 +74,11 @@ function query(query){
         }
       }
     }
+    else{
+      var result = document.createElement('p');
+      result.innerText = "No results";
+      document.getElementById('results').appendChild(result);
+    }
+  }
   remove_results(display_results);
 }
