@@ -64,7 +64,7 @@ function query(query){
               result.appendChild(title);
               result.appendChild(peek);
               document.getElementById('results').appendChild(result);
-              console.log(result);
+              //console.log(result);
               exit = true;
             }
             catch(e){
@@ -76,9 +76,24 @@ function query(query){
     }
     else{
       var result = document.createElement('p');
-      result.innerText = "No results";
+      result.innerText = "No results found.";
       document.getElementById('results').appendChild(result);
     }
   }
   remove_results(display_results);
+}
+
+function getParameterByName(name, url) {
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+var passed_query = getParameterByName('query', window.location);
+if(passed_query != null){
+  query(passed_query);
 }
