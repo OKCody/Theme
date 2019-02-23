@@ -97,18 +97,20 @@ img + em{
     position: fixed;
     width: 100%;
     height: 100%;
-    padding-top: 3em;
+    padding-right: 6em;
+}
+#menu .row{
+  display: block;
+  width: 100%;
+  height: 3em;
 }
 #menu a{
-  display: block;
-    width: 100%;
-    position: relative;
-    right: 0px;
-    color: #FFF;
-    float: right;
-    text-decoration: none;
-    text-align: right;
-    margin-right: 6em;
+  position: relative;
+  right: 0px;
+  color: #FFF;
+  float: right;
+  text-decoration: none;
+  text-align: right;
 }
 #nav #logo{
   font-family: 'Arial Black', 'Arial', 'sans-serif';
