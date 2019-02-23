@@ -96,6 +96,10 @@ img + em{
   height: 100%;
   background-color: rgba(0,0,0, 0.5);
 }
+#menu .row{
+  line-height: 3em;
+  font-size: 2em;  
+}
 
 #results a{
   text-decoration-line: none;
