@@ -73,7 +73,7 @@ img + em{
   position: fixed;
   top: 0em;
   left: 0em;
-  width: 100%;
+  width: calc(100% - 2em);
   background-color: pink;
   overflow: hidden;
   padding: 1em;
