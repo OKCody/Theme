@@ -111,7 +111,8 @@ img + em{
   float: right;
   text-decoration: none;
   text-align: right;
-  margin-right: 3em;
+  margin-right: 6em;
+  vertical-align: middle;
 }
 #nav #logo{
   font-family: 'Arial Black', 'Arial', 'sans-serif';
