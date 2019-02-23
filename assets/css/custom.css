@@ -85,7 +85,7 @@ img + em{
   float: left;
   width: calc(100% - 10em);
 }
-#nav #right{
+#right{
   float: right;
   width: 10em;
 }
