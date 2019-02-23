@@ -83,11 +83,11 @@ img + em{
 }
 #nav #left{
   float: left;
-  width: 90%;
+  width: calc(100% - 10em);
 }
 #nav #right{
   float: right;
-  width: 10%;
+  width: 10em;
 }
 #nav #logo{
   font-family: 'Arial Black', 'Arial', 'sans-serif';
