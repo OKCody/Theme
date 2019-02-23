@@ -89,6 +89,17 @@ img + em{
   float: right;
   width: 10em;
 }
+#menu{
+  display: none;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  color: #FFF;
+}
+#menu a{
+  display: block;
+  width: 100%;
+
+}
 #nav #logo{
   font-family: 'Arial Black', 'Arial', 'sans-serif';
   font-weight: 900;
