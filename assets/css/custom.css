@@ -81,6 +81,14 @@ img + em{
   font-family: 'Helvetica', 'sans-serif';
   font-weight: 100;
 }
+#nav #left{
+  float: left;
+  width: 90%;
+}
+#nav #right{
+  float: right;
+  width: 10%;
+}
 #nav #logo{
   font-family: 'Arial Black', 'Arial', 'sans-serif';
   font-weight: 900;
