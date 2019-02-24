@@ -100,8 +100,9 @@ img + em{
   overflow-y: scroll;
 }
 #menu .row{
-  line-height: 3em;
-  font-size: 2em;
+  line-height: 2em;
+  font-size: 1.5em;
+  height: 2em;
 }
 
 #results a{
