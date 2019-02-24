@@ -73,6 +73,7 @@ img + em{
   position: fixed;
   top: 0em;
   left: 0em;
+  z-index: 2;
   width: calc(100% - 2em);
   background-color: pink;
   overflow: hidden;
@@ -90,7 +91,8 @@ img + em{
   position: fixed;
   top: 0em;
   left: 0em;
-  padding: 1em;
+  z-index: 1;
+  padding: 3em 1em 1em 1em;
   text-align: right;
   width: calc(100% - 2em);
   height: 100%;
