@@ -75,7 +75,7 @@ img + em{
   left: 0em;
   z-index: 2;
   width: calc(100% - 2em);
-  background-color: rgba(255,255,255, 0.75);
+  background-color: #FFF;
   overflow: hidden;
   padding: 1em;
 }
@@ -92,7 +92,8 @@ img + em{
   top: 0em;
   left: 0em;
   z-index: 1;
-  padding: 3em 1em 1em 1em;
+  padding: 0em 1em 1em 1em;
+  margin-top: 3em;
   text-align: right;
   width: calc(100% - 2em);
   height: 100%;
