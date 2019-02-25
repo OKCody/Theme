@@ -136,7 +136,7 @@ img + em{
   }
   #nav #right{
     display: block;
-    width: 100%;
+    width: calc(100% - 2em);
     text-align: center;
   }
   #menu .row{
