@@ -81,10 +81,12 @@ img + em{
 }
 #nav #left{
   float: left;
+  line-height: 2em;
 }
 #nav #right{
   position: fixed;
   right: 1em;
+  line-height: 2em;
 }
 #menu{
   display: block;
