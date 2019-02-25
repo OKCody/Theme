@@ -81,12 +81,10 @@ img + em{
 }
 #nav #left{
   float: left;
-  line-height: 2em;
 }
 #nav #right{
   position: fixed;
   right: 1em;
-  line-height: 2em;
 }
 #menu{
   display: block;
@@ -139,8 +137,7 @@ img + em{
   #nav #right{
     display: block;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
   }
   .adv{
     position: absolute;
