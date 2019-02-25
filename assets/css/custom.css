@@ -139,6 +139,9 @@ img + em{
     width: 100%;
     text-align: center;
   }
+  #menu .row{
+    text-align: center;
+  }
   .adv{
     position: absolute;
     top: initial;
