@@ -28,11 +28,13 @@
           document.getElementById('menu').style.display = 'block';
           document.getElementById('prev').style.display = 'none';
           document.getElementById('next').style.display = 'none';
+          document.getElementsByTagName('main').style.filter = 'blur(2px)';
         }
         else{
           document.getElementById('menu').style.display = 'none';
           document.getElementById('prev').style.display = 'block';
           document.getElementById('next').style.display = 'block';
+          document.getElementsByTagName('main').style.filter = 'none';
         }
       });
   </script>
