@@ -138,7 +138,6 @@ img + em{
   article {
   }
   #nav{
-
   }
   #nav #left{
     display: none;
@@ -147,6 +146,7 @@ img + em{
     display: block;
     width: calc(100% - 2em);
     text-align: center;
+    margin-right: 0em;
   }
   #menu .row{
     text-align: center;
