@@ -96,7 +96,7 @@ img + em{
   color: black;
 }
 #menu{
-  display: block;
+  display: none;
   position: fixed;
   top: 0em;
   left: 0em;
