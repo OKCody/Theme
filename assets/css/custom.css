@@ -81,6 +81,7 @@ img + em{
 }
 #nav #left{
   float: left;
+  margin-left: 4.5em;
 }
 #nav #right{
   position: fixed;
