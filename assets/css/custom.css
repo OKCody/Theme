@@ -150,6 +150,7 @@ img + em{
   }
   #menu .row{
     text-align: center;
+    margin-right: 0em;
   }
   .adv{
     position: absolute;
