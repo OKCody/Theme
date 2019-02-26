@@ -88,6 +88,9 @@ img + em{
   right: 1em;
   margin-right: 4.5em;
 }
+#nav #right:hover{
+  cursor: pointer;
+}
 #nav a{
   color: #000;
   text-decoration: none;
