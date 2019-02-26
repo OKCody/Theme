@@ -88,8 +88,9 @@ img + em{
   right: 1em;
   margin-right: 4.5em;
 }
-#nav a:link{
-  color: black;
+#nav a{
+  color: #000;
+  text-decoration: none;
 }
 #nav a:visited{
   color: black;
