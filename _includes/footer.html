@@ -26,9 +26,13 @@
       document.getElementById('right').addEventListener('click', function(){
         if(document.getElementById('menu').style.display != 'block'){
           document.getElementById('menu').style.display = 'block';
+          document.getElementById('prev').style.display = 'none';
+          document.getElementById('next').style.display = 'none';
         }
         else{
           document.getElementById('menu').style.display = 'none';
+          document.getElementById('prev').style.display = 'block';
+          document.getElementById('next').style.display = 'block';
         }
       });
   </script>
