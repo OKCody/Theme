@@ -138,6 +138,8 @@ img + em{
   article {
   }
   #nav{
+    padding: 1em;
+    height: 1.5em;
   }
   #nav #left{
     display: none;
