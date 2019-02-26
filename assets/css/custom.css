@@ -17,8 +17,6 @@ main{
   margin-right: auto;
   max-width: 33em;
   padding: 5em 1em 1em 1em;
-  transition: 0.1s filter linear, 0.1s -webkit-filter linear;
-  
 }
 footer{
   display: block;
