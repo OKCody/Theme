@@ -8,7 +8,7 @@ body{
   line-height: 1.5em;
   margin: 0px;
   padding: 0px 0px 50px 0px; /*Required for sticky footer*/
-  position: relative; /*Required for sticky footer*/
+  position: relative;        /*Required for sticky footer*/
 
 }
 main{
@@ -17,6 +17,10 @@ main{
   margin-right: auto;
   max-width: 33em;
   padding: 5em 1em 1em 1em;
+  left: 0;               /* Required for .main to maintain position while position == fixed –for use when displaying menu */
+  right: 0;              /* Required for .main to maintain position while position == fixed –for use when displaying menu */
+  margin-left: 0 auto;   /* Required for .main to maintain position while position == fixed –for use when displaying menu */
+  margin-right: 0 auto;  /* Required for .main to maintain position while position == fixed –for use when displaying menu */
 }
 footer{
   display: block;
