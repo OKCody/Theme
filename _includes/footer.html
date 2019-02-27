@@ -30,6 +30,7 @@
           document.getElementById('prev').style.display = 'none';
           document.getElementById('next').style.display = 'none';
           document.getElementsByTagName('main')[0].style.position = 'fixed';  // Prevent scrolling while menu is visible
+          document.getElementsByTagName('main')[0].style.filter = 'blur(2px)';
         }
         else{
           // Hide menu
@@ -37,6 +38,7 @@
           document.getElementById('prev').style.display = 'block';
           document.getElementById('next').style.display = 'block';
           document.getElementsByTagName('main')[0].style.position = 'static';  // Allow scrolling while menu is not visible
+          document.getElementsByTagName('main')[0].style.filter = 'none';
         }
       });
   </script>
