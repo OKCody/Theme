@@ -25,14 +25,18 @@
   <script>
       document.getElementById('right').addEventListener('click', function(){
         if(document.getElementById('menu').style.display != 'block'){
+          // Display menu
           document.getElementById('menu').style.display = 'block';
           document.getElementById('prev').style.display = 'none';
           document.getElementById('next').style.display = 'none';
+          document.getElementsByTagName('main')[0].style.position = 'fixed';  // Prevent scrolling while menu is visible
         }
         else{
+          // Hide menu
           document.getElementById('menu').style.display = 'none';
           document.getElementById('prev').style.display = 'block';
           document.getElementById('next').style.display = 'block';
+          document.getElementsByTagName('main')[0].style.position = 'static';  // Allow scrolling while menu is not visible
         }
       });
   </script>
