@@ -85,12 +85,12 @@ img + em{
 }
 #nav #left{
   float: left;
-  margin-left: 4.5em;
+  margin-left: calc(50vw - 25em);
 }
 #nav #right{
   position: fixed;
   right: 1em;
-  margin-right: 4.5em;
+  margin-right: calc(50vw - 25em);
 }
 #nav #right:hover{
   cursor: pointer;
