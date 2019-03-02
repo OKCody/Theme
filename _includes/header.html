@@ -15,7 +15,7 @@
     <div class="row"><a class="tab" href="/">DOWNLOAD</a></div>
     {% for page in site.html_pages %}
       {% for item in site.html_pages %}
-        {% assign yep = page.name | replace: '.md','' | plus: 0 %}
+        {% assign yep = item.name | replace: '.md','' | plus: 0 %}
         {% if yep == forloop.index %}
     <div class="row"><a class="tab" href="/">{{ page.date }}</a></div>
         {% break %}
