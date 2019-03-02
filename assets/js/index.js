@@ -16,4 +16,4 @@ window.index = [
   ];
 {% endcapture %}
 
-{{ search_index | strip_newlines | strip}}
+{{ search_index | strip_newlines | strip }}
