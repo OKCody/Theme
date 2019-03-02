@@ -18,7 +18,7 @@
       {% for page in site.html_pages %}
         {% if i == page.name | replace '.md', '' %}
     <div class="row"><a class="tab" href="/">{{ page.name | default: page.name }}</a></div>
-        {% assign i | plus: 1 %}
+        {% assign i = i | plus: 1 %}
         {% break %}
       {% endfor %}
     {% endfor %}
