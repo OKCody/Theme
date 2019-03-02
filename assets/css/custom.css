@@ -54,7 +54,7 @@ img + em{
 .adv{
   position: fixed;
   top: 3em;
-  width: calc((100% - 33em)/4);
+  width: 6em;
   height: 100%;
   margin: 0px;
   color: #595959;
