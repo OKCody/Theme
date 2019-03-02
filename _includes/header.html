@@ -16,9 +16,11 @@
     {% assign i = 0 %}
     {% for page in site.html_pages %}
       {% for page in site.html_pages %}
-        {% if i == page.name | replace '.md', '' | plus: 0 %}
+        {% assign yep = html_page.name | replace '.md', '' | plus: 0 %}
+        {% if i == yep %}
     <div class="row"><a class="tab" href="/">{{ page.name | default: page.name }}</a></div>
           {% assign i = i | plus: 1 %}
+          {% break %}
         {% endif %}
       {% endfor %}
     {% endfor %}
