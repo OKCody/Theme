@@ -13,8 +13,14 @@
     <div class="row"><a class="tab" href="/">{{page.title}}</a></div>
     <div class="row"><a class="tab" href="/">SEARCH</a></div>
     <div class="row"><a class="tab" href="/">DOWNLOAD</a></div>
-    {% for page in site.html_pages | sort: "name" %}
+    {% assign i = 0 %}
+    {% for page in site.html_pages %}
+      {% for page in site.html_pages %}
+        {% if i == page.name | replace '.md', '' %}
     <div class="row"><a class="tab" href="/">{{ page.name | default: page.name }}</a></div>
+        {% assign i | plus: 1 %}
+        {% break %}
+      {% endfor %}
     {% endfor %}
   </div>
 </header>
