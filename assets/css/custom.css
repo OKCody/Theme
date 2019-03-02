@@ -57,19 +57,23 @@ img + em{
   width: calc((100% - 33em)/4);
   height: 100%;
   margin: 0px;
+  margin-left: calc(50vw - 25em);
   color: #595959;
   text-decoration: none;
   padding-top: calc(50vh - 50px);
-  text-align: center;
 }
 .adv:hover{
   color: #DDD;
 }
 #prev{
   left: 0px;
+  padding-left: 1em;
+  text-align: left;
 }
 #next{
   right: 0px;
+  padding-right: 1em;
+  text-align: right;
 }
 /* Add a black background color to the top navigation */
 #nav{
