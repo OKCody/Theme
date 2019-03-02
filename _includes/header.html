@@ -14,7 +14,7 @@
     <div class="row"><a class="tab" href="/">SEARCH</a></div>
     <div class="row"><a class="tab" href="/">DOWNLOAD</a></div>
     {% for page in site.html_pages %}
-    <div class="row"><a class="tab" href="/">{{ page.title | default: page.name }}</a></div>
+    <div class="row"><a class="tab" href="/">{{ page.name | default: page.name }}</a></div>
     {% endfor %}
   </div>
 </header>
