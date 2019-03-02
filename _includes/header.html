@@ -18,6 +18,7 @@
         {% assign yep = page.name | replace: '.md','' | plus: 0 %}
         {% if yep == forloop.index %}
     <div class="row"><a class="tab" href="/">{{ page.date }}</a></div>
+        {% break %}
         {% endif %}
       {% endfor %}
     {% endfor %}
