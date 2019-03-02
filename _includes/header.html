@@ -15,7 +15,7 @@
     <div class="row"><a class="tab" href="/">DOWNLOAD</a></div>
     {% assign i = 0 %}
     {% for page in site.html_pages %}
-    <div class="row"><a class="tab" href="/">{{ page.name | replace: '.md', '' | default: page.name }}</a></div>
+    <div class="row"><a class="tab" href="/">{{ page.date | replace: '.md', '' | default: page.name }}</a></div>
     {% endfor %}
   </div>
 </header>
