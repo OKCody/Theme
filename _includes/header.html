@@ -16,7 +16,7 @@
     {% for page in site.html_pages %}
       {% assign i = 0 %}
       {% for item in site.html_pages %}
-        {% assign numb = page.name | replace: '.md','' | plus: 1 %}
+        {% assign numb = page.name | replace: '.md','' | plus: 0 %}
         {% if numb == i %}
           <div class="row"><a>{{ page.name }} {{ numb }} {{ i }}</a></div>
         {% endif %}
