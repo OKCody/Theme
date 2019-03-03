@@ -20,7 +20,7 @@
         {% assign number = filename[0] | plus: 0 %}
         {% assign name = filename[1] %}
         {% if number == i %}
-          <div class="row"><a>{{ name | default: item.title | default: item.name}} {{ numb }} {{ i }} {% if numb == i %} yes {% else %} no {% endif %}</a></div>
+          <div class="row"><a href="/_pages/1/{{item.name | replace: '.md', '.html'}}">{{ name | default: item.title | default: item.name }}</a></div>
           {% break %}
         {% endif %}
       {% endfor %}
