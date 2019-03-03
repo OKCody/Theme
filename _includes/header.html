@@ -14,8 +14,13 @@
     <div class="row"><a class="tab" href="/">SEARCH</a></div>
     <div class="row"><a class="tab" href="/">DOWNLOAD</a></div>
     {% for page in site.html_pages %}
+      {% assign i = 0 %}
       {% for item in site.html_pages %}
-        <div class="row"><a>{{ page.name }} {{ forloop.index }}</a></div>
+        {% assign numb = page.name | replace: '.md','' | plus: 1 %}
+        {% if numb == i %}
+          <div class="row"><a>{{ page.name }} {{ numb }} {{ i }}</a></div>
+        {% endif %}
+        {% assign i = i | plus: 1 %}
       {% endfor %}
     {% endfor %}
     <div class="row"><a class="tab" href="/">{{ page.name | replace: '.md', '' }}</a></div>
