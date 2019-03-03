@@ -14,7 +14,10 @@
     <div class="row"><a class="tab" href="/">SEARCH</a></div>
     <div class="row"><a class="tab" href="/">DOWNLOAD</a></div>
     {% for page in site.html_pages %}
-    <div class="row"><a class="tab" href="/">{{ forloop.index }}</a></div>
+      {% for item in site.html_pages}
+        <div class="row"><a>{{ page.name }} {{ item.name }}</a></div>
+      {% endfor %}
     {% endfor %}
+    <div class="row"><a class="tab" href="/">{{ page.name | replace: '.md', '' }}</a></div>
   </div>
 </header>
