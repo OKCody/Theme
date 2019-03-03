@@ -19,6 +19,7 @@
         {% assign numb = item.name | replace: '.md','' | plus: 0 %}
         {% if numb == i %}
           <div class="row"><a>{{ item.name }} {{ numb }} {{ i }} {% if numb == i %} yes {% else %} no {% endif %}</a></div>
+          {% break %}
         {% endif %}
       {% endfor %}
       {% assign i = i | plus: 1 %}
