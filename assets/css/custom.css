@@ -129,6 +129,9 @@ img + em{
 #menu .row a{
   color: #000;
   text-decoration: none;
+  display: block;
+  width: 33em;
+  float: right;
 }
 #results a{
   text-decoration-line: none;
@@ -164,6 +167,10 @@ img + em{
   #menu .row{
     text-align: center;
     margin-right: 0em;
+  }
+  #menu .row a{
+    display: flex;
+    width: 100%;
   }
   .adv{
     position: absolute;
