@@ -115,7 +115,7 @@ img + em{
   z-index: 1;
   padding: 0em 1em 1em 1em;
   margin-top: 3em;
-  text-align: right;
+  text-align: left;
   width: calc(100% - 2em);
   height: 100%;
   background-color: rgba(255,255,255, 0.75);
@@ -124,14 +124,14 @@ img + em{
 #menu .row{
   line-height: 2em;
   font-size: 1.5em;
-  margin-right: calc(50vw - 16.68em);
+  margin-left: calc(50vw - 16.68em);
 }
 #menu .row a{
   color: #000;
   text-decoration: none;
   display: block;
   width: 33em;
-  float: right;
+  float: left;
 }
 #results a{
   text-decoration-line: none;
