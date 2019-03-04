@@ -166,7 +166,8 @@ img + em{
   }
   #menu .row{
     text-align: center;
-    margin-right: 0em;
+    margin-left: auto;
+    margin-right: auto;
   }
   #menu .row a{
     display: flex;
