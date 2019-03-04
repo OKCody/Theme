@@ -165,12 +165,11 @@ img + em{
     margin-right: 0em;
   }
   #menu .row{
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
   #menu .row a{
-    display: flex;
+    display: block;
     width: 100%;
   }
   .adv{
