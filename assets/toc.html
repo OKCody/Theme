@@ -18,7 +18,7 @@ permalink: /toc.html
 {% endfor %}
 </ul>
 {% endcapture %}
-{% assign toc = toc | strip_newlines %}
+{% assign toc = toc | strip_newlines | strip %}
 
 <!DOCTYPE html>
 <html>
