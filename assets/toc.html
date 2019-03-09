@@ -2,7 +2,7 @@
 permalink: /toc.html
 ---
 {% capture toc %}
-<ul>
+<ol>
 {%- assign i = 0 -%}
 {%- for page in site.html_pages -%}
 	{%- for item in site.html_pages -%}
@@ -16,7 +16,7 @@ permalink: /toc.html
 	{%- endfor -%}
 	{%- assign i = i | plus: 1 -%}
 {%- endfor -%}
-</ul>
+</ol>
 {% endcapture %}
 {% assign toc = toc %}
 
