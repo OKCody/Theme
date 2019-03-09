@@ -28,9 +28,8 @@ permalink: /toc.html
 	      {% assign i = i | plus: 1 %}
 	    {% endfor %}
 			{% endcapture %}
-			{% assign site.toc = {{ toc }} %}
 			<ul>
-				{{ site.toc }}
+				{{ toc }}
 			</ul>
 		</article>
 		{% include footer.html %}
