@@ -13,7 +13,7 @@ permalink: /toc.html
 			<h2>{{ site.subtitle }}<h2>
 		  <h3>{{ site.author }}</h3>
 		  <h4>{{ site.license }}</h4>
-			{% capture site.toc %}
+			{% capture toc %}
 			{% assign i = 0 %}
 	    {% for page in site.html_pages %}
 	      {% for item in site.html_pages %}
@@ -29,7 +29,7 @@ permalink: /toc.html
 	    {% endfor %}
 			{% endcapture %}
 			<ul>
-				{{ site.toc }}
+				{{ toc }}
 			</ul>
 		</article>
 		{% include footer.html %}
