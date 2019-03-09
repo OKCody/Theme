@@ -18,7 +18,7 @@ permalink: /toc.html
 {% endfor %}
 </ul>
 {% endcapture %}
-{% assign toc = toc | strip_newlines %}
+{% assign toc = toc %}
 
 <!DOCTYPE html>
 <html>
@@ -31,7 +31,7 @@ permalink: /toc.html
 			<h2>{{ site.subtitle }}<h2>
 		  <h3>{{ site.author }}</h3>
 		  <h4>{{ site.license }}</h4>
-			{{ toc | strip_newlines}}
+			{{ toc }}
 		</article>
 		{% include footer.html %}
 	</main>
