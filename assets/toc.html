@@ -31,7 +31,7 @@ permalink: /toc.html
 			<h2>{{ site.subtitle }}<h2>
 		  <h3>{{ site.author }}</h3>
 		  <h4>{{ site.license }}</h4>
-			{{ toc }}
+			{{ toc | strip_newlines}}
 		</article>
 		{% include footer.html %}
 	</main>
