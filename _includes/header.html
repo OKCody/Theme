@@ -9,23 +9,11 @@
     </div>
   </div>
   <div id="menu">
-    <div class="row"><a class="tab" href="/">{{site.title}}</a></div>
-    <div class="row"><a class="tab" href="/">{{page.title}}</a></div>
-    <div class="row"><a class="tab" href="/">SEARCH</a></div>
-    <div class="row"><a class="tab" href="/">DOWNLOAD</a></div>
-    {% assign i = 0 %}
-    {% for page in site.html_pages %}
-      {% for item in site.html_pages %}
-        {% assign filename = item.name | replace: '.md','' | split: '--' %}
-        {% assign number = filename[0] | plus: 0 %}
-        {% assign name = filename[1] %}
-        {% if number == i %}
-          <div class="row"><a href="/_pages/1/{{item.name | replace: '.md', '.html'}}">{{ name | default: item.title | default: item.name }}</a></div>
-          {% break %}
-        {% endif %}
-      {% endfor %}
-      {% assign i = i | plus: 1 %}
-    {% endfor %}
+    <div class="row util"><a class="tab" href="/">SEARCH</a></div>
+    <div class="row util"><a class="tab" href="/">DOWNLOAD</a></div>
+    <ul>
+      {{ toc }}
+    </ul>
     <div class="row"><a class="tab" href="/">{{ page.name | replace: '.md', '' }}</a></div>
   </div>
 </header>
