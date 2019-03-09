@@ -11,7 +11,7 @@ permalink: /toc.html
 		{%- assign name = filename[1] -%}
 		{%- if number == i -%}
 			<li><a href="/_pages/1/{{item.name | replace: '.md', '.html'}}">{{ name | default: item.title | default: item.name }}</a></li>
-			{%- break %}
+			{% break %}
 		{%- endif -%}
 	{%- endfor -%}
 	{%- assign i = i | plus: 1 -%}
