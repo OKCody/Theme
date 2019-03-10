@@ -1,5 +1,4 @@
 {% capture toc %}
-<ol>
 {%- assign i = 0 -%}
 {%- for page in site.html_pages -%}
 	{%- for item in site.html_pages -%}
@@ -13,7 +12,6 @@
 	{%- endfor -%}
 	{%- assign i = i | plus: 1 -%}
 {%- endfor -%}
-</ol>
 {% endcapture %}
 
 <header>
@@ -27,9 +25,10 @@
     </div>
   </div>
   <div id="menu">
-    <div class="row util"><a class="tab" href="/">SEARCH</a></div>
-    <div class="row util"><a class="tab" href="/">DOWNLOAD</a></div>
+    <ol>
+    <li><a class="tab" href="/">SEARCH</a></li>
+    <li><a class="tab" href="/">DOWNLOAD</a></li>
     {{ toc }}
-    <div class="row"><a class="tab" href="/">{{ page.name | replace: '.md', '' }}</a></div>
+    </ol>
   </div>
 </header>
