@@ -125,6 +125,7 @@ img + em{
   line-height: 2em;
   font-size: 1.5em;
   margin-left: calc(50vw - 16.68em);
+  list-style-type: none;
 }
 #menu ol li a{
   color: #000;
