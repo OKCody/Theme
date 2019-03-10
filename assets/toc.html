@@ -1,23 +1,7 @@
 ---
 permalink: /toc.html
 ---
-{% capture toc %}
-<ol>
-{%- assign i = 0 -%}
-{%- for page in site.html_pages -%}
-	{%- for item in site.html_pages -%}
-		{%- assign filename = item.name | replace: '.md','' | split: '--' -%}
-		{%- assign number = filename[0] | plus: 0 -%}
-		{%- assign name = filename[1] -%}
-		{%- if number == i -%}
-			<li><a href="/_pages/1/{{item.name | replace: '.md', '.html'}}">{{ name | default: item.title | default: item.name }}</a></li>
-			{% break %}
-		{%- endif -%}
-	{%- endfor -%}
-	{%- assign i = i | plus: 1 -%}
-{%- endfor -%}
-</ol>
-{% endcapture %}
+
 
 <!DOCTYPE html>
 <html>
