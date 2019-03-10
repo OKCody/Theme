@@ -14,8 +14,9 @@
     <div class="row util"><a class="tab" href="/">DOWNLOAD</a></div>
     {{ toc }}
     {% if page.name == '1.md' %}
-      <p>worked!</p>
+    {% assign yes = page.name %}
     {% endif %}
+    <p>{{ yes }}</p>
     <div class="row"><a class="tab" href="/">{{ page.name | replace: '.md', '' }}</a></div>
   </div>
 </header>
