@@ -126,7 +126,7 @@ img + em{
   font-size: 1.5em;
   margin-left: calc(50vw - 16.68em);
 }
-#menu .row a{
+#menu ol li a{
   color: #000;
   text-decoration: none;
   display: block;
