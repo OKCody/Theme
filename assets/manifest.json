@@ -2,7 +2,7 @@
   "name": "Your Great Site",
   "short_name": "Thing",
   "description": "Learn how to create and share something or other.",
-  "start_url": "{{ site.baseurl }}/content/index.html",
+  "start_url": "{{ site.baseurl }}/index.html",
   "background_color": "#FFFFFF",
   "theme_color": "#FFFFFF",
   "display": "standalone",
