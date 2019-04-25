@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /manifest.json
+---
 {
   "name": "Your Great Site",
   "short_name": "Thing",
