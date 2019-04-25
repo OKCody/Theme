@@ -6,11 +6,11 @@ var cacheName = 'hello-world-page';
 var filesToCache = [
   '/assets/css/custom.css',
   '/assets/css/hmbgr.svg',
-  '/js/lunr/junr.js',
-  '/js/index.js',
-  '/js/search.js',
-  'search.html',
-  'manifest.json',
+  '/assets/js/lunr/junr.js',
+  '/assets/js/index.js',
+  '/assets/js/search.js',
+  '/search.html',
+  '/manifest.json',
   '/sw.js',
   {% for page in site.html_pages %}'{{ page.url }}'{% unless forloop.last %},{% endunless %}
   {% endfor %}
