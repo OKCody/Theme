@@ -6,7 +6,7 @@ var cacheName = 'hello-world-page';
 var filesToCache = [
   '/assets/css/custom.css',
   '/assets/css/hmbgr.svg',
-  '/assets/js/lunr/junr.js',
+  '/assets/js/lunr/lunr.js',
   '/assets/js/index.js',
   '/assets/js/search.js',
   '/search.html',
