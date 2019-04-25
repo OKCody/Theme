@@ -2,7 +2,7 @@
   "name": "Your Great Site",
   "short_name": "Thing",
   "description": "Learn how to create and share something or other.",
-  "start_url": "{{ site.baseurl }}/index.html",
+  "start_url": "index.html",
   "background_color": "#FFFFFF",
   "theme_color": "#FFFFFF",
   "display": "standalone",
@@ -12,7 +12,7 @@
     "type": "image/png"
   },
   {
-    "src": "/assets/icons/resistor_512.png",
+    "src": "/assets/icons/OERMD_512.png",
     "sizes": "512x512",
     "type": "image/png"
   }]
